@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "browser": true
+  }
+  //  "rules": {
+//    "no-unexpected-multiline": "error",
+//    "no-extra-semi": "error"
+//  }
+}
