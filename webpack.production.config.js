@@ -1,5 +1,5 @@
 const path = require("path");
-const TerserPlugin = require("terser-webpack-plugin");
+// const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -16,7 +16,7 @@ module.exports = {
     //   keep: /\.css$/,
     // },
   },
-  mode: "none",
+  mode: "production",
   module: {
     rules: [
       //   {
@@ -64,7 +64,8 @@ module.exports = {
     ],
   },
   plugins: [
-    new TerserPlugin(),
+    // production에 기본 내장
+    // new TerserPlugin(),
     new MiniCssExtractPlugin({
       filename: "style.[contenthash].css",
     }),
